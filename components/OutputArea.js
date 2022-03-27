@@ -10,7 +10,7 @@ function OutputArea() {
   return (
     <FormControl mt={5}>
       <FormLabel htmlFor={'input-area'}>Output</FormLabel>
-      <Textarea id={'input-area'} resize={'none'} h={40} />
+      <Textarea id={'input-area'} resize={'none'} h={40} readOnly />
     </FormControl>
   );
 }
