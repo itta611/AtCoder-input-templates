@@ -5,7 +5,7 @@ function Index() {
   return (
     <Container maxW={'xl'}>
       <Head>
-        <title>Atcoder input generator</title>
+        <title>AtCoder input generator</title>
       </Head>
       <Heading as={'h2'} size={'2xl'} mt={24}>
         AtCoder input generator
