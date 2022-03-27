@@ -7,7 +7,7 @@ function Index() {
       <Head>
         <title>Atcoder input generator</title>
       </Head>
-      <Heading as={'h2'} size={'2xl'} mt={14}>
+      <Heading as={'h2'} size={'2xl'} mt={24}>
         AtCoder input generator
       </Heading>
     </Container>
