@@ -1,5 +1,6 @@
 import { Container, Heading, Text } from '@chakra-ui/react';
 import Head from 'next/head';
+import InputArea from '../components/InputArea';
 
 function Index() {
   return (
@@ -15,6 +16,8 @@ function Index() {
         <br />
         Paste "Input" statement to textbox to generate.
       </Text>
+
+      <InputArea />
     </Container>
   );
 }
