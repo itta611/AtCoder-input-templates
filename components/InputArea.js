@@ -8,8 +8,9 @@ import {
 
 function InputArea() {
   return (
-    <FormControl mt={20}>
+    <FormControl mt={20} mb={5}>
       <FormLabel htmlFor={'input-area'}>Input</FormLabel>
+      {/* TODO: add lang select box */}
       <Textarea id={'input-area'} resize={'none'} h={40} />
       <HStack mt={5}>
         <FormLabel htmlFor={'copy-switch'} mb={0} flex={1}>

@@ -1,6 +1,8 @@
 import { Container, Heading, Text } from '@chakra-ui/react';
 import Head from 'next/head';
 import InputArea from '../components/InputArea';
+import { Divider } from '@chakra-ui/react';
+import OutputArea from '../components/OutputArea';
 
 function Index() {
   return (
@@ -23,8 +25,9 @@ function Index() {
         <br />
         Paste "Input" statement to textbox to generate.
       </Text>
-
       <InputArea />
+      <Divider />
+      <OutputArea />
     </Container>
   );
 }
