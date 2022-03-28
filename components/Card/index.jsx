@@ -1,13 +1,17 @@
 import { Box, createStandaloneToast } from '@chakra-ui/react';
 import CardTitle from './CardTitle';
-import CardCode from './CardCode';
 import CardInput from './CardInput';
-import pythonCodes from './pythonCodes';
+import codes from './codes';
+import { TemplateContext } from '../TemplateMenu';
+import { useContext } from 'react';
 
 const toast = createStandaloneToast();
 
-function handleClick(code) {
-  navigator.clipboard.writeText(pythonCodes[code]);
+function handleClick(code, lang) {
+  let langCode;
+  if (lang === 'Python') langCode = 'python';
+  else if (lang === 'C++') langCode = 'cpp';
+  navigator.clipboard.writeText(codes[langCode][code]);
   toast({
     title: 'Copied to Clipboard!',
     status: 'success',
@@ -16,6 +20,7 @@ function handleClick(code) {
 }
 
 function Card(props) {
+  const lang = useContext(TemplateContext);
   return (
     <Box
       borderRadius={'md'}
@@ -25,8 +30,8 @@ function Card(props) {
       mb={4}
       boxShadow={'sm'}
       cursor={'pointer'}
-      onClick={(e) => {
-        handleClick(props.code);
+      onClick={() => {
+        handleClick(props.code, lang);
       }}
       {...props}
     />
@@ -34,4 +39,4 @@ function Card(props) {
 }
 
 export default Card;
-export { CardTitle, CardCode, CardInput };
+export { CardTitle, CardInput };
