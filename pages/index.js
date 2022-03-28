@@ -20,9 +20,9 @@ function Index() {
         AtCoder input templates
       </Heading>
       <Text fontSize={'2xl'} mt={7} textAlign={'center'}>
-        Generate input source code automaticly.
+        Input source code templates.
         <br />
-        Paste "Input" statement to textbox to generate.
+        Click item to copy to your clipboard.
       </Text>
       <TemplateMenu />
     </Container>
