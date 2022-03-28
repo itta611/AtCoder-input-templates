@@ -12,6 +12,7 @@ function Card(prop) {
       p={6}
       mb={4}
       boxShadow={'sm'}
+      cursor={'pointer'}
       {...prop}
     />
   );
