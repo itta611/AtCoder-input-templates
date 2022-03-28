@@ -1,7 +1,17 @@
-import { Box } from '@chakra-ui/react';
+import { Box, createStandaloneToast } from '@chakra-ui/react';
 import CardTitle from './CardTitle';
 import CardCode from './CardCode';
 import CardInput from './CardInput';
+
+const toast = createStandaloneToast();
+
+function handleClick() {
+  toast({
+    title: 'Copied to Clipboard!',
+    status: 'success',
+    duration: 2000,
+  });
+}
 
 function Card(prop) {
   return (
@@ -13,6 +23,7 @@ function Card(prop) {
       mb={4}
       boxShadow={'sm'}
       cursor={'pointer'}
+      onClick={handleClick}
       {...prop}
     />
   );
