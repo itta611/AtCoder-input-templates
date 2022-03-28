@@ -6,7 +6,7 @@ function Index() {
   return (
     <Container maxW={'2xl'}>
       <Head>
-        <title>AtCoder input generator</title>
+        <title>AtCoder input templates</title>
       </Head>
       <Heading
         as={'h2'}
@@ -17,7 +17,7 @@ function Index() {
         pb={1}
         textAlign={'center'}
       >
-        AtCoder input generator
+        AtCoder input templates
       </Heading>
       <Text fontSize={'2xl'} mt={7} textAlign={'center'}>
         Generate input source code automaticly.
