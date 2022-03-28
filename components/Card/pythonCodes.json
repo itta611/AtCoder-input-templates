@@ -1,0 +1,15 @@
+{
+  "single": "n = int(input())",
+  "double": "n, m = list(map(int, input().split()))",
+  "triple": "a, b, c = list(map(int, input().split()))",
+  "string": "s = input()",
+  "string-with-length": "n = int(input())\ns = input()",
+  "array": "n = int(input())\na = list(map(int, input().split()))",
+  "double-array": "n = int(input())\na = list(map(int, input().split()))\nb = list(map(int, input().split()))",
+  "triple-array": "n = int(input())\na = list(map(int, input().split()))\nb = list(map(int, input().split()))\nc = list(map(int, input().split()))",
+  "string-array": "n = int(input())\ns = []\nfor i in range(n):\n  s.append(input())",
+  "array-vertical": "n = int(input())\na = []\nfor i in range(n):\n  a.append(int(input()))",
+  "double-arra-vertical": "n = int(input())\na = []\nb = []\nfor i in range(n):\n  args = list(map(int, input().split()))\n  a.append(args[0])\n  b.append(args[1])",
+  "triple-array-vertical": "n = int(input())\na = []\nb = []\nc = []\nfor i in range(n):\n  args = list(map(int, input().split()))\n  a.append(args[0])\n  b.append(args[1])\n  c.append(args[2])",
+  "2d-array": "n = int(input())\na = []\nfor i in range(n):\n  a.append(list(map(int, input().split())))"
+}

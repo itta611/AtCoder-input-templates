@@ -2,10 +2,12 @@ import { Box, createStandaloneToast } from '@chakra-ui/react';
 import CardTitle from './CardTitle';
 import CardCode from './CardCode';
 import CardInput from './CardInput';
+import pythonCodes from './pythonCodes';
 
 const toast = createStandaloneToast();
 
-function handleClick() {
+function handleClick(code) {
+  navigator.clipboard.writeText(pythonCodes[code]);
   toast({
     title: 'Copied to Clipboard!',
     status: 'success',
@@ -13,7 +15,7 @@ function handleClick() {
   });
 }
 
-function Card(prop) {
+function Card(props) {
   return (
     <Box
       borderRadius={'md'}
@@ -23,8 +25,10 @@ function Card(prop) {
       mb={4}
       boxShadow={'sm'}
       cursor={'pointer'}
-      onClick={handleClick}
-      {...prop}
+      onClick={(e) => {
+        handleClick(props.code);
+      }}
+      {...props}
     />
   );
 }

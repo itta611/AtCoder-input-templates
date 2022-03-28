@@ -12,50 +12,37 @@ function TemplateMenu() {
       gap={3}
       w={'full'}
     >
-      <Card>
-        <CardTitle>Simple Input</CardTitle>
-        <CardCode value='n = int(input())' />
+      <Card code='single'>
+        <CardTitle>Single Input</CardTitle>
         <CardInput>N</CardInput>
       </Card>
-      <Card>
+      <Card code='double'>
         <CardTitle>Double Input</CardTitle>
-        <CardCode value='n, m = list(map(int, input().split()))' />
         <CardInput>N, M</CardInput>
       </Card>
-      <Card>
+      <Card code='triple'>
         <CardTitle>Triple Input</CardTitle>
-        <CardCode value='a, b, c = list(map(int, input().split()))' />
         <CardInput>A, B, C</CardInput>
       </Card>
-      <Card>
+      <Card code='string'>
         <CardTitle>String</CardTitle>
-        <CardCode value='s = input()' />
         <CardInput>S</CardInput>
       </Card>
-      <Card>
+      <Card code='string-with-length'>
         <CardTitle>String with length</CardTitle>
-        <CardCode value='n = int(input())\ns = input()' />
         <CardInput>
           N<br />S
         </CardInput>
       </Card>
-      <Card>
+      <Card code='array'>
         <CardTitle>Array</CardTitle>
-        <CardCode
-          value={`n = int(input())\na = list(map(int, input().split()))`}
-        />
         <CardInput>
           N<br />
           A(1) ... A(N)
         </CardInput>
       </Card>
-      <Card>
+      <Card code='double-array'>
         <CardTitle>Double Array</CardTitle>
-        <CardCode
-          value={`
-          n = int(input())\na = list(map(int, input().split())))\nb =
-          list(map(int, input().split())))`}
-        />
         <CardInput>
           N<br />
           A(1) ... A(N)
@@ -63,13 +50,8 @@ function TemplateMenu() {
           B(1) ... B(N)
         </CardInput>
       </Card>
-      <Card>
+      <Card code='triple-array'>
         <CardTitle>Triple Array</CardTitle>
-        <CardCode
-          value={`
-          n = int(input())\na = list(map(int, input().split())))\nb =
-          list(map(int, input().split())))\nc = list(map(int, input().split())))`}
-        />
         <CardInput>
           N<br />
           A(1) ... A(N)
@@ -79,11 +61,8 @@ function TemplateMenu() {
           C(1) ... C(N)
         </CardInput>
       </Card>
-      <Card>
+      <Card code='string-array'>
         <CardTitle>String Array</CardTitle>
-        <CardCode
-          value={`n = int(input())\ns = []\nfor i in range(n):\n  s.push(input())`}
-        />
         <CardInput>
           N<br />
           S(1)
@@ -92,11 +71,8 @@ function TemplateMenu() {
           S(N)
         </CardInput>
       </Card>
-      <Card>
+      <Card code='array-vertical'>
         <CardTitle>Array Vertical</CardTitle>
-        <CardCode
-          value={`n = int(input())\na = []\nfor i in range(n):\n  a.push(int(input()))`}
-        />
         <CardInput>
           N<br />
           A(1)
@@ -107,11 +83,8 @@ function TemplateMenu() {
           A(N)
         </CardInput>
       </Card>
-      <Card>
+      <Card code='double-arra-vertical'>
         <CardTitle>Double Array Vertical</CardTitle>
-        <CardCode
-          value={`n = int(input())\na = []\nb = []\nfor i in range(n):\n  args = list(map(int, input().split()))\n  a.push(args[0])\n  b.push(args[1])`}
-        />
         <CardInput>
           N
           <br />
@@ -123,11 +96,8 @@ function TemplateMenu() {
           A(N) B(N)
         </CardInput>
       </Card>
-      <Card>
+      <Card code='triple-array-vertical'>
         <CardTitle>Triple Array Vertical</CardTitle>
-        <CardCode
-          value={`n = int(input())\na = []\nb = []\n  c = []\nfor i in range(n):\n  args = list(map(int, input().split()))\n  a.push(args[0])\n  b.push(args[1])\n  c.push(args[2])`}
-        />
         <CardInput>
           N<br />
           A(1) B(1) C(1)
@@ -138,11 +108,8 @@ function TemplateMenu() {
           A(N) B(N) C(N)
         </CardInput>
       </Card>
-      <Card>
+      <Card code='2d-array'>
         <CardTitle>2D Array</CardTitle>
-        <CardCode
-          value={`n = int(input())\na = []\nfor i in range(n):\n  a.push(list(map(int, input().split())))`}
-        />
         <CardInput>
           H, W
           <br />
