@@ -6,7 +6,7 @@ function Index() {
   return (
     <Container maxW={'2xl'}>
       <Head>
-        <title>AtCoder input templates</title>
+        <title>AtCoder Input Templates</title>
       </Head>
       <Heading
         as={'h2'}
@@ -17,10 +17,10 @@ function Index() {
         pb={1}
         textAlign={'center'}
       >
-        AtCoder input templates
+        AtCoder Input Templates
       </Heading>
       <Text fontSize={'2xl'} mt={7} textAlign={'center'}>
-        Input source code templates.
+        Input source code templates for AtCoder.
         <br />
         Click item to copy to your clipboard.
       </Text>
