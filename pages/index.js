@@ -4,7 +4,7 @@ import TemplateMenu from '../components/TemplateMenu';
 
 function Index() {
   return (
-    <Container maxW={'2xl'} centerContent>
+    <Container maxW={'2xl'}>
       <Head>
         <title>AtCoder input generator</title>
       </Head>
@@ -15,6 +15,7 @@ function Index() {
         background={'-webkit-linear-gradient(0deg, #05a7ff, #ff05f7)'}
         backgroundClip={'text'}
         pb={1}
+        textAlign={'center'}
       >
         AtCoder input generator
       </Heading>
