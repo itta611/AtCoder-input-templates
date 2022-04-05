@@ -1,6 +1,7 @@
 import { Container, Heading, Text } from '@chakra-ui/react';
 import Head from 'next/head';
 import TemplateMenu from '../components/TemplateMenu';
+import Footer from '../components/Footer';
 
 function Index() {
   return (
@@ -25,6 +26,7 @@ function Index() {
         Click item to copy to your clipboard.
       </Text>
       <TemplateMenu />
+      <Footer />
     </Container>
   );
 }
