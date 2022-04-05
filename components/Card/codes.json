@@ -10,7 +10,7 @@
     "triple-array": "n = int(input())\na = list(map(int, input().split()))\nb = list(map(int, input().split()))\nc = list(map(int, input().split()))",
     "string-array": "n = int(input())\ns = [input() for _ in range(n)]",
     "array-vertical": "n = int(input())\na = [int(input()) for _ in range(n)]",
-    "double-arra-vertical": "n = int(input())\na, b = [list(map(int, input().split())) for _ in range(n)]",
+    "double-array-vertical": "n = int(input())\na, b = [list(map(int, input().split())) for _ in range(n)]",
     "triple-array-vertical": "n = int(input())\na, b, c = [list(map(int, input().split())) for _ in range(n)]",
     "2d-array": "n = int(input())\na = []\nfor i in range(n):\n  a.append(list(map(int, input().split())))"
   },
@@ -25,7 +25,7 @@
     "triple-array": "int n;\ncin >> n;\nvector<int> a(n);\nvector<int> b(n);\nvector<int> c(n);\nfor (int i = 0; i < n; i++) {cin >> a[i] >> b[i] >> c[i];}",
     "string-array": "int n;\ncin >> n;\nvector<string> s(n);\nfor (int i = 0; i < n; i++) {cin >> s[i];}",
     "array-vertical": "int n;\ncin >> n;\nvector<int> a(n);\nfor (int i = 0; i < n; i++) {cin >> a[i];}",
-    "double-arra-vertical": "int n;\ncin >> n;\nvector<int> a(n);\nvector<int> b(n);\nfor (int i = 0; i < n; i++) {cin >> a[i] >> b[i];}",
+    "double-array-vertical": "int n;\ncin >> n;\nvector<int> a(n);\nvector<int> b(n);\nfor (int i = 0; i < n; i++) {cin >> a[i] >> b[i];}",
     "triple-array-vertical": "int n;\ncin >> n;\nvector<int> a(n);\nvector<int> b(n);\nvector<int> c(n);\nfor (int i = 0; i < n; i++) {cin >> a[i] >> b[i] >> c[i];}",
     "2d-array": "int n;\ncin >> n;\nvector<vector<int>> a(n);\nfor (int i = 0; i < n; i++) {a[i].resize(n);\nfor (int i = 0; i < n; i++) {cin >> a[i][j];}"
   }

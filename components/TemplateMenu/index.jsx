@@ -102,7 +102,7 @@ function TemplateMenu() {
             A(N)
           </CardInput>
         </Card>
-        <Card code='double-arra-vertical'>
+        <Card code='double-array-vertical'>
           <CardTitle>Double Array Vertical</CardTitle>
           <CardInput>
             N
